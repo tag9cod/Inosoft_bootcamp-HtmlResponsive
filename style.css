@@ -1,0 +1,138 @@
+body {
+        font-family: sans-serif;
+        background-color: royalblue;
+}
+.main {
+        width: 96%;
+        border-radius: 5px;
+        border: 2px solid #dedede;
+        padding: 10px;
+        margin: 10px;
+        text-align: justify;
+        background-color: orange;
+}
+h1 {
+    margin: 10px;
+    height: auto;
+}
+.garis {
+        border-bottom: 3px solid #dedede;
+        width: 200px;
+}
+.input_data{
+    width: 700px;
+    padding: 10px 10px;
+    margin-top: 15px;
+    margin-left: 15PX;
+    margin-bottom: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-size: 20px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.input_data:hover {
+  color: orangered;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.buttn {
+  position: relative;
+  margin-right: 15PX;
+  border-radius: 5px;
+  background: currentColor;
+  border: 1px solid currentColor;
+  font-size: 1.1rem;
+  color: darkred;
+  margin: 3rem 0;
+  padding: 0.75rem 3rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  transition: background-color 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.buttn span {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.buttn::before {
+  content: '';
+  position: absolute;
+  background: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  display: block;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+.buttn:hover {
+  color: seagreen;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
+}
+.buttn:active::before, .button:focus::before {
+  -webkit-transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s;
+  transition: transform 1.12s ease, opacity 0.28s ease 0.364s, -webkit-transform 1.12s ease;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+.buttn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 780px) {
+    .input_data {
+        width: 80%;
+        float: none;
+    }
+    .buttn {
+        width: auto;
+        float: none;
+    }
+    .main {
+        width: auto;
+        float: none;
+    }
+    .garis {
+        width: auto;
+        float: none;
+    }
+    img {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .input_data {
+        width: 80%;
+        float: none;
+    }
+    .buttn {
+        width: auto;
+        float: none;
+    }
+    .main {
+        width: auto;
+        float: none;
+    }
+    .garis {
+        width: auto;
+        float: none;
+    }
+    img {
+        width: 100%;
+        float: none;
+    }
+}
